@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+
+    <!-- BOOTSTRAP 4 CDN -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet">
+
+
+    <!-- FONT-AWESOME CDN -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+
+<style>
+        
+.main{
+    margin-top: 4rem;
+   
+}
+
+.main select
+{
+    width: 280px;
+    height: 40px;
+    font-size: 1em;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+    border-radius: 20px;
+    font-family: var(--head-fonts);
+    box-shadow: 1px 1px #000;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+    font-weight: 700;
+}
+.main select:hover{
+    background-color: var(--color-primary);
+}
+.main .product-1,
+.main .product-2,
+.main .product-3,
+.main .product-4
+
+{
+    width: 280px;
+    padding: 10px 0px;
+    /* border: 1px solid #000; */
+    background-color:var(--color-primary) ;
+    border-radius: 20px;
+    padding: 10px 20px;
+    opacity: 0;
+    transition-duration: 0.5s;
+    border: 2px solid black;
+margin-top: 6rem;
+}
+.main .product-1 .price,
+.main .product-2 .price,
+.main .product-3 .price,
+.main .product-4 .price
+
+{
+    position: relative;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 500;
+    color: #111;
+    font-size: 2em;
+    letter-spacing: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main .product-1 li h2,
+.main .product-2 li h2,
+.main .product-3 li h2,
+.main .product-4 li h2
+
+{
+    font-size: 17px;
+
+}
+.comp-header h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-secondary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.comp-header h1 span {
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+
+
+    </style>
+
+
+
+
+
+    <title>Hair Care - Shine Today</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <section class="header sticky-top">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="../../index.html">
+            <span class="logo">
+              <img style="width: 160px;" src="../../assets/images/Header/Web Logo.png"
+                alt="">
+            </span>
+          </a>
+          <button class="navbar-toggler menu-toggle" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav" id="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../../index.html">Home <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown"
+                  role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Treatments
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="../../pages/treatment-pages/hairloss.html">Hair Loss
+                    Treatments</a>
+                  <a class="dropdown-item" href="../../pages/treatment-pages/Grayhair.html">Gray Hair
+                    Treatment</a>
+                  <a class="dropdown-item" href="../../pages/treatment-pages/baldness.html">Premature
+                    Baldness Treatment</a>
+                  <a class="dropdown-item" href="../../pages/treatment-pages/dandruff.html">Dandruff
+                    Treatment</a>
+                  <a class="dropdown-item" href="../../homeremedies.html">Home
+                    Remedies</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../equipments.html">Equipments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../contactus.html">Contact us</a>
+              </li>
+             </ul>
+
+          </div>
+        </nav>
+
+      </div>
+    </section>
+    <!-- Header Close -->
+
+
+<!-- Compare Section Start -->
+<div class="container-fluid comp-header mt-3">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="img-fluid" width="100%" height="600px" src="../../assets/images/compare-page/strat-banner.jpg" alt="">
+
+            <h1 class="text-center">STRAIGHTNERS <span>COMPARISON</span></h1>
+        </div>
+    </div>
+</div>    
+
+
+    <section >
+        <div class="container main ">
+            <div class="row">
+                <div class="col-md-3">
+
+           
+        <div class="box">
+            <select id="first" onchange="selectProduct1()">
+                <option value="">Select Straightner 1</option>
+                <option value="val1">ghd Gold Styler</option>
+                <option value="val2">Flower Ceramic Styling Iron</optoion>
+                <option value="val3">Remington PROluxe Ceramic Hair</option>
+                <option value="val4">Alfa Italia Lustro Titanium Styler</option>
+            </select>
+            <div class="product-1" id="product1">
+                <h2 class="price" id="price">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model">Model Name:</h2></li>
+                    <li><h2 class="type" id="type">Type of plates: </h2></li>
+                    <li><h2 class="ionic" id="ionic">Ionic technology:</h2></li>
+                    <li><h2 class="heat" id="heat">Number of heat settings: </h2></li>
+                    <li><h2 class="acc" id="acc">Additional accessories: </h2></li>
+                   
+
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="box">
+            <select id="second" onchange="selectProduct2()">
+                <option value="">Select Straightner 2</option>
+                <option value="val1">ghd Gold Styler</option>
+                <option value="val2">Flower Ceramic Styling Iron</optoion>
+                <option value="val3">Remington PROluxe Ceramic Hair</option>
+                <option value="val4">Alfa Italia Lustro Titanium Styler</option>
+            </select>
+            <div class="product-2" id="product2">
+                <h2 class="price" id="price1">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model1">Model Name:</h2></li>
+                    <li><h2 class="type" id="type1">Type of plates: </h2></li>
+                    <li><h2 class="ionic" id="ionic1">Ionic technology:</h2></li>
+                    <li><h2 class="heat" id="heat1">Number of heat settings: </h2></li>
+                    <li><h2 class="acc" id="acc1">Additional accessories: </h2></li>
+                  
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="box">
+            <select id="third" onchange="selectProduct3()">
+                <option value="">Select Straightner 3</option>
+                <option value="val1">ghd Gold Styler</option>
+                <option value="val2">Flower Ceramic Styling Iron</optoion>
+                <option value="val3">Remington PROluxe Ceramic Hair</option>
+                <option value="val4">Alfa Italia Lustro Titanium Styler</option>
+            </select>
+            <div class="product-3" id="product3">
+                <h2 class="price" id="price2">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model2">Model Name:</h2></li>
+                    <li><h2 class="type" id="type2">Type of plates: </h2></li>
+                    <li><h2 class="ionic" id="ionic2">Ionic technology:</h2></li>
+                    <li><h2 class="heat" id="heat2">Number of heat settings: </h2></li>
+                    <li><h2 class="acc" id="acc2">Additional accessories: </h2></li>
+               
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+
+        <div class="box">
+            <select id="fourth" onchange="selectProduct4()">
+                <option value="">Select Straightner 4</option>
+                <option value="val1">ghd Gold Styler</option>
+                <option value="val2">Flower Ceramic Styling Iron</optoion>
+                <option value="val3">Remington PROluxe Ceramic Hair</option>
+                <option value="val4">Alfa Italia Lustro Titanium Styler</option>
+            </select>
+            <div class="product-4" id="product4">
+                <h2 class="price" id="price3">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model3">Model Name:</h2></li>
+                    <li><h2 class="type" id="type3">Type of plates: </h2></li>
+                    <li><h2 class="ionic" id="ionic3">Ionic technology:</h2></li>
+                    <li><h2 class="heat" id="heat3">Number of heat settings: </h2></li>
+                    <li><h2 class="acc" id="acc3">Additional accessories: </h2></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </section>
+<!-- Compare Section End -->
+
+<!-- COMPARE SCRIPT -->
+    <script>
+        function selectProduct1()
+        {
+
+            document.getElementById("product1").style.opacity = 1;
+
+            var product = document.getElementById("first").value;
+            if(product=="val1")
+            {
+                document.getElementById("price").innerHTML="$149.00";
+                document.getElementById("model").innerHTML="Model :ghd Gold Styler";
+                document.getElementById("type").innerHTML="Type of plates: Ceramic-coated";
+                document.getElementById("ionic").innerHTML="Ionic technology: NO";
+                document.getElementById("heat").innerHTML="heat settings: 1 (185C)";
+                document.getElementById("acc").innerHTML="Additional accessories: (Heat resistant protective plate guard)";
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price").innerHTML="$69.00";
+                document.getElementById("model").innerHTML="Model :Flower Ceramic Styling Iron";
+                document.getElementById("type").innerHTML="Type of plates: Tourmaline ceramic";
+                document.getElementById("ionic").innerHTML="Ionic technology: NO";
+                document.getElementById("heat").innerHTML="heat settings: 4";
+                document.getElementById("acc").innerHTML="Additional accessories: None";
+               
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price").innerHTML="$48.99";
+                document.getElementById("model").innerHTML="Model :Remington PROluxe Ceramic";
+                document.getElementById("type").innerHTML="Type of plates: Ceramic-coated";
+                document.getElementById("ionic").innerHTML="Ionic technology: NO";
+                document.getElementById("heat").innerHTML="heat settings: Nine (150 to 230C)";
+                document.getElementById("acc").innerHTML="Additional accessories: Travel pouch";
+                
+            }
+            else if(product=="val4")
+            {
+                document.getElementById("price").innerHTML="$9.34";
+                document.getElementById("model").innerHTML="Model :Alfa Italia Lustro";
+                document.getElementById("type").innerHTML="Type of plates: Metal (titanium)";
+                document.getElementById("ionic").innerHTML="Ionic technology: YES";
+                document.getElementById("heat").innerHTML="heat settings: 15 (from 90 to 230C)";
+                document.getElementById("acc").innerHTML="Additional accessories: None";
+              
+            }
+            else 
+            {
+                document.getElementById("product1").style.opacity = 0;
+            }
+        }
+
+
+        function selectProduct2()
+        {
+
+            document.getElementById("product2").style.opacity = 1;
+
+            var product = document.getElementById("second").value;
+            if(product=="val1")
+            {   document.getElementById("price1").innerHTML="$149.00";
+                document.getElementById("model1").innerHTML="Model :ghd Gold Styler";
+                document.getElementById("type1").innerHTML="Type of plates: Ceramic-coated";
+                document.getElementById("ionic1").innerHTML="Ionic technology: NO";
+                document.getElementById("heat1").innerHTML="heat settings: 1 (185C)";
+                document.getElementById("acc1").innerHTML="Additional accessories: (Heat resistant protective plate guard)";
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price1").innerHTML="$69.00";
+                document.getElementById("model1").innerHTML="Model :Flower Ceramic Styling Iron";
+                document.getElementById("type1").innerHTML="Type of plates: Tourmaline ceramic";
+                document.getElementById("ionic1").innerHTML="Ionic technology: NO";
+                document.getElementById("heat1").innerHTML="heat settings: 4";
+                document.getElementById("acc1").innerHTML="Additional accessories: None";
+            }
+            else if(product=="val3")
+            {document.getElementById("price1").innerHTML="$48.99";
+                document.getElementById("model1").innerHTML="Model :Remington PROluxe Ceramic";
+                document.getElementById("type1").innerHTML="Type of plates: Ceramic-coated";
+                document.getElementById("ionic1").innerHTML="Ionic technology: NO";
+                document.getElementById("heat1").innerHTML="heat settings: Nine (150 to 230C)";
+                document.getElementById("acc1").innerHTML="Additional accessories: Travel pouch";
+            }
+            else if(product=="val4")
+            {
+                document.getElementById("price1").innerHTML="$9.34";
+                document.getElementById("model1").innerHTML="Model :Alfa Italia Lustro";
+                document.getElementById("type1").innerHTML="Type of plates: Metal (titanium)";
+                document.getElementById("ionic1").innerHTML="Ionic technology: YES";
+                document.getElementById("heat1").innerHTML="heat settings: 15 (from 90 to 230C)";
+                document.getElementById("acc1").innerHTML="Additional accessories: None";
+              
+            }
+            else 
+            {
+                document.getElementById("product2").style.opacity = 0;
+            }
+        }
+
+        function selectProduct3()
+        {
+
+            document.getElementById("product3").style.opacity = 1;
+
+            var product = document.getElementById("third").value;
+            if(product=="val1")
+            {
+                document.getElementById("price2").innerHTML="$149.00";
+                document.getElementById("model2").innerHTML="Model :ghd Gold Styler";
+                document.getElementById("type2").innerHTML="Type of plates: Ceramic-coated";
+                document.getElementById("ionic2").innerHTML="Ionic technology: NO";
+                document.getElementById("heat2").innerHTML="heat settings: 1 (185C)";
+                document.getElementById("acc2").innerHTML="Additional accessories: (Heat resistant protective plate guard)";
+                
+            }
+            else if(product=="val2")
+            {
+               
+                document.getElementById("price2").innerHTML="$69.00";
+                document.getElementById("model2").innerHTML="Model :Flower Ceramic Styling Iron";
+                document.getElementById("type2").innerHTML="Type of plates: Tourmaline ceramic";
+                document.getElementById("ionic2").innerHTML="Ionic technology: NO";
+                document.getElementById("heat2").innerHTML="heat settings: 4";
+                document.getElementById("acc2").innerHTML="Additional accessories: None";
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price2").innerHTML="$48.99";
+                document.getElementById("model2").innerHTML="Model :Remington PROluxe Ceramic";
+                document.getElementById("type2").innerHTML="Type of plates: Ceramic-coated";
+                document.getElementById("ionic2").innerHTML="Ionic technology: NO";
+                document.getElementById("heat2").innerHTML="heat settings: Nine (150 to 230C)";
+                document.getElementById("acc2").innerHTML="Additional accessories: Travel pouch";
+            }
+            else if(product=="val4")
+            {
+                document.getElementById("price2").innerHTML="$9.34";
+                document.getElementById("model2").innerHTML="Model :Alfa Italia Lustro";
+                document.getElementById("type2").innerHTML="Type of plates: Metal (titanium)";
+                document.getElementById("ionic2").innerHTML="Ionic technology: YES";
+                document.getElementById("heat2").innerHTML="heat settings: 15 (from 90 to 230C)";
+                document.getElementById("acc2").innerHTML="Additional accessories: None";
+            }
+            else 
+            {
+                document.getElementById("product3").style.opacity = 0;
+            }
+
+           
+        }
+
+        function selectProduct4()
+        {
+
+            document.getElementById("product4").style.opacity = 1;
+
+            var product = document.getElementById("fourth").value;
+            if(product=="val1")
+            {
+                document.getElementById("price3").innerHTML="$149.00";
+                document.getElementById("model3").innerHTML="Model :ghd Gold Styler";
+                document.getElementById("type3").innerHTML="Type of plates: Ceramic-coated";
+                document.getElementById("ionic3").innerHTML="Ionic technology: NO";
+                document.getElementById("heat3").innerHTML="heat settings: 1 (185C)";
+                document.getElementById("acc3").innerHTML="Additional accessories: (Heat resistant protective plate guard)";
+            }
+            else if(product=="val2")
+            {
+                
+                document.getElementById("price3").innerHTML="$69.00";
+                document.getElementById("model3").innerHTML="Model :Flower Ceramic Styling Iron";
+                document.getElementById("type3").innerHTML="Type of plates: Tourmaline ceramic";
+                document.getElementById("ionic3").innerHTML="Ionic technology: NO";
+                document.getElementById("heat3").innerHTML="heat settings: 4";
+                document.getElementById("acc3").innerHTML="Additional accessories: None";
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price3").innerHTML="$48.99";
+                document.getElementById("model3").innerHTML="Model :Remington PROluxe Ceramic";
+                document.getElementById("type3").innerHTML="Type of plates: Ceramic-coated";
+                document.getElementById("ionic3").innerHTML="Ionic technology: NO";
+                document.getElementById("heat3").innerHTML="heat settings: Nine (150 to 230C)";
+                document.getElementById("acc3").innerHTML="Additional accessories: Travel pouch";
+            }
+            else if(product=="val4")
+            {
+                document.getElementById("price3").innerHTML="$9.34";
+                document.getElementById("model3").innerHTML="Model :Alfa Italia Lustro";
+                document.getElementById("type3").innerHTML="Type of plates: Metal (titanium)";
+                document.getElementById("ionic3").innerHTML="Ionic technology: YES";
+                document.getElementById("heat3").innerHTML="heat settings: 15 (from 90 to 230C)";
+                document.getElementById("acc3").innerHTML="Additional accessories: None";
+            }
+            else 
+            {
+                document.getElementById("product4").style.opacity = 0;
+            }
+        }
+    </script>
+
+
+
+<!-- Footer Section Start -->
+<footer class="page-footer mt-5">
+    <div class="footer-logo">
+        <div class="container">
+            <div class="row py-4 d-flex align-item-center">
+  
+                <div class="col-md-12 text-center">
+                    <a class="ml-5" href="../../index.html"><img src="../../assets/images/footer/footer logo.png" width="200px" height="100%" alt=""></i></a>
+                    <a style="font-size: 20px;" class="float-right mt-2 ml-2 p-1 text-dark" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a style="font-size: 20px;"  class="float-right  mt-2 ml-2 p-1 text-dark" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container text-center text-md-left mt-3 footer-content">
+        <div class="row">
+          <div class="col-md-4 mx-auto mb-4 ">
+            <h6 class="text-uppercase font-weight-bold text-center">INTRO </h6>
+            <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 340px; height: 2px; background-color: var(--color-secondary)">
+                <p style="color: white;">Hair care is an overall term for hygiene and cosmetology involving the hair which grows from the human scalp, and to a lesser extent facial, pubic and other body hair. Hair care routines differ according to an individual's culture and the physical characteristics of one's hair.</p>
+                </div>
+               <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold ">LINKS </h6>
+                    <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px; background-color: var(--color-secondary)">
+                    <ul class="list-unstyled ">
+                        <li class="my-2 "><a href="../../index.html">Home</a></li>
+                        <li class="my-2"><a href="../../homeremedies.html">Home Remedies</a></li>
+                        <li class="my-2"><a href="../../products.html">Products</a></li>
+                        <li class="my-2"><a href="../../equipments.html">Equipments</li>
+                        <li class="my-2"><a href="../../contactus.html">Contact us</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-md-2 mx-auto mb-4">
+                      <h6 class="text-uppercase font-weight-bold">Treatments</h6>
+                      <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 120px; height: 2px; background-color: var(--color-secondary);">
+                      <ul class="list-unstyled ">
+                        <li class="my-3 "><a href="../../pages/treatment-pages/hairloss.html">Hair Loss</a></li>
+                              <li class="my-3"><a href="../../pages/treatment-pages/Grayhair.html">Gray Hair </a></li>
+                              <li class="my-3"><a href="../../pages/treatment-pages/baldness.html">Baldness Treatment</a></li>
+                              <li class="my-3"><a href="../../pages/treatment-pages/dandruff.html">Dandruff Treatment</li>
+                    </ul>
+                      </div>
+                     
+        </div>
+        <div class="footer-copyright text-center py-3 ">
+  
+            <p>&copy; Copyright 
+                <a href="#">AFAQUE AHMED</a>
+            </p>
+         
+        </div>
+  
+  
+  
+    </div>
+  
+  
+  
+  </footer>
+  
+  <!-- Footer Section End -->
+
+
+
+</div>
+<!-- BOOTSTRAP 4 (js , pooper and jquery CDN) -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- JQUERY CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+<!-- CUSTOM JAVASCRIPT -->
+<script src="../../assets/js/script.js"> </script>
+</body>
+</html>

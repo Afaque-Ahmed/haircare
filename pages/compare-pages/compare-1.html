@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+
+    <!-- BOOTSTRAP 4 CDN -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet">
+
+
+    <!-- FONT-AWESOME CDN -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+
+<style>
+        
+.main{
+    margin-top: 4rem;
+   
+}
+
+.main select
+{
+    width: 280px;
+    height: 40px;
+    font-size: 1em;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+    border-radius: 20px;
+    font-family: var(--head-fonts);
+    box-shadow: 1px 1px #000;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+    font-weight: 700;
+}
+.main select:hover{
+    background-color: var(--color-primary);
+}
+.main .product-1,
+.main .product-2,
+.main .product-3,
+.main .product-4
+
+{
+    width: 280px;
+    padding: 10px 0px;
+    /* border: 1px solid #000; */
+    background-color:var(--color-primary) ;
+    border-radius: 20px;
+    padding: 10px 20px;
+    opacity: 0;
+    transition-duration: 0.5s;
+    border: 2px solid black;
+margin-top: 6rem;
+}
+.main .product-1 .price,
+.main .product-2 .price,
+.main .product-3 .price,
+.main .product-4 .price
+
+{
+    position: relative;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 500;
+    color: #111;
+    font-size: 2em;
+    letter-spacing: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main .product-1 li h2,
+.main .product-2 li h2,
+.main .product-3 li h2,
+.main .product-4 li h2
+
+{
+    font-size: 17px;
+
+}
+.comp-header h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-secondary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.comp-header h1 span {
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+
+
+    </style>
+
+
+
+
+
+    <title>Hair Care - Shine Today</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <section class="header sticky-top">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="../../index.html">
+            <span class="logo">
+              <img style="width: 160px;" src="../../assets/images/Header/Web Logo.png"
+                alt="">
+            </span>
+          </a>
+          <button class="navbar-toggler menu-toggle" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav" id="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../../index.html">Home <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown"
+                  role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Treatments
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="../../pages/treatment-pages/hairloss.html">Hair Loss
+                    Treatments</a>
+                  <a class="dropdown-item" href="../../pages/treatment-pages/Grayhair.html">Gray Hair
+                    Treatment</a>
+                  <a class="dropdown-item" href="../../pages/treatment-pages/baldness.html">Premature
+                    Baldness Treatment</a>
+                  <a class="dropdown-item" href="../../pages/treatment-pages/dandruff.html">Dandruff
+                    Treatment</a>
+                  <a class="dropdown-item" href="../../homeremedies.html">Home
+                    Remedies</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../equipments.html">Equipments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../contactus.html">Contact us</a>
+              </li>
+             </ul>
+
+          </div>
+        </nav>
+
+      </div>
+    </section>
+    <!-- Header Close -->
+
+
+<!-- Compare Section Start -->
+<div class="container-fluid comp-header mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="img-fluid" width="100%" height="600px" src="../../assets/images/compare-page/Banner-Hair-Dryer.jpg" alt="">
+
+            <h1 class="text-center">DRYER <span>COMPARISON</span></h1>
+        </div>
+    </div>
+</div>    
+
+
+    <section >
+        <div class="container main ">
+            <div class="row">
+                <div class="col-md-3">
+
+           
+        <div class="box">
+            <select id="first" onchange="selectProduct1()">
+                <option value="">Select Dryer 1</option>
+                <option value="val1">Dyson Supersonic Hair Dryer</option>
+                <option value="val2">InStyler Turbo Ionic Blow Dryer</optoion>
+                <option value="val3">Babyliss Nano Titanium Dryer</option>
+                <option value="val4">Revlon Essentials Hair Dryer</option>
+            </select>
+            <div class="product-1" id="product1">
+                <h2 class="price" id="price">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model">Model Name:</h2></li>
+                    <li><h2 class="cool" id="cool">Cool shot:</h2></li>
+                    <li><h2 class="cord" id="cord">Cord length (m):</h2></li>
+                    <li><h2 class="loop" id="loop">Hanging loop:</h2></li>
+                    <li><h2 class="ionic" id="ionic">Ionic technology:</h2></li>
+                    <li><h2 class="speed" id="speed">Number of speed settings:</h2></li>
+                    <li><h2 class="heat" id="heat">Number of heat settings: </h2></li>
+                   
+
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="box">
+            <select id="second" onchange="selectProduct2()">
+                <option value="">Select Dryer 2</option>
+                <option value="val1">Dyson Supersonic Hair Dryer</option>
+                <option value="val2">InStyler Turbo Ionic Blow Dryer</optoion>
+                <option value="val3">Babyliss Nano Titanium Dryer</option>
+                <option value="val4">Revlon Essentials Hair Dryer</option>
+            </select>
+            <div class="product-2" id="product2">
+                <h2 class="price" id="price1">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model1">Model Name:</h2></li>
+                    <li><h2 class="cool" id="cool1">Cool shot:</h2></li>
+                    <li><h2 class="cord" id="cord1">Cord length (m):</h2></li>
+                    <li><h2 class="loop" id="loop1">Hanging loop:</h2></li>
+                    <li><h2 class="ionic" id="ionic1">Ionic technology:</h2></li>
+                    <li><h2 class="speed" id="speed1">Number of speed settings:</h2></li>
+                    <li><h2 class="heat" id="heat1">Number of heat settings: </h2></li>
+                  
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <div class="box">
+            <select id="third" onchange="selectProduct3()">
+                <option value="">Select Dryer 3</option>
+                <option value="val1">Dyson Supersonic Hair Dryer</option>
+                <option value="val2">InStyler Turbo Ionic Blow Dryer</optoion>
+                <option value="val3">Babyliss Nano Titanium Dryer</option>
+                <option value="val4">Revlon Essentials Hair Dryer</option>
+            </select>
+            <div class="product-3" id="product3">
+                <h2 class="price" id="price2">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model2">Model Name:</h2></li>
+                    <li><h2 class="cool" id="cool2">Cool shot:</h2></li>
+                    <li><h2 class="cord" id="cord2">Cord length (m):</h2></li>
+                    <li><h2 class="loop" id="loop2">Hanging loop:</h2></li>
+                    <li><h2 class="ionic" id="ionic2">Ionic technology:</h2></li>
+                    <li><h2 class="speed" id="speed2">Number of speed settings:</h2></li>
+                    <li><h2 class="heat" id="heat2">Number of heat settings: </h2></li>
+               
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+
+        <div class="box">
+            <select id="fourth" onchange="selectProduct4()">
+                <option value="">Select Dryer 4</option>
+                <option value="val1">Dyson Supersonic Hair Dryer</option>
+                <option value="val2">InStyler Turbo Ionic Blow Dryer</optoion>
+                <option value="val3">Babyliss Nano Titanium Dryer</option>
+                <option value="val4">Revlon Essentials Hair Dryer</option>
+            </select>
+            <div class="product-4" id="product4">
+                <h2 class="price" id="price3">Price</h2>
+                <ul>
+                    <li><h2 class="model" id="model3">Model Name:</h2></li>
+                    <li><h2 class="cool" id="cool3">Cool shot:</h2></li>
+                    <li><h2 class="cord" id="cord3">Cord length (m):</h2></li>
+                    <li><h2 class="loop" id="loop3">Hanging loop:</h2></li>
+                    <li><h2 class="ionic" id="ionic3">Ionic technology:</h2></li>
+                    <li><h2 class="speed" id="speed3">Number of speed settings:</h2></li>
+                    <li><h2 class="heat" id="heat3">Number of heat settings: </h2></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </section>
+<!-- Compare Section End -->
+
+<!-- COMPARE SCRIPT -->
+    <script>
+        function selectProduct1()
+        {
+
+            document.getElementById("product1").style.opacity = 1;
+
+            var product = document.getElementById("first").value;
+            if(product=="val1")
+            {
+                document.getElementById("price").innerHTML="399.99$";
+                document.getElementById("model").innerHTML="Model :Dyson Supersonic";
+                document.getElementById("cool").innerHTML="Cool shot: Yes";
+                document.getElementById("cord").innerHTML="Cord length (m): 2.7";
+                document.getElementById("loop").innerHTML="Hanging loop: No";
+                document.getElementById("ionic").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed").innerHTML="speed: 3";
+                document.getElementById("heat").innerHTML="heat : 3";
+               
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price").innerHTML="79.99$";
+                document.getElementById("model").innerHTML="Model : InStyler TURBO Ionic";
+                document.getElementById("cool").innerHTML="Cool shot: Yes";
+                document.getElementById("cord").innerHTML="Cord length (m): 2.94";
+                document.getElementById("loop").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed").innerHTML="speed: no limit";
+                document.getElementById("heat").innerHTML="heat  : 2";
+               
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price").innerHTML="139.99$";
+                document.getElementById("model").innerHTML="Model : Babyliss Nano Titanium";
+                document.getElementById("cool").innerHTML="Cool shot: Yes";
+                document.getElementById("cord").innerHTML="Cord length (m): 3.02";
+                document.getElementById("loop").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed").innerHTML="speed: 2";
+                document.getElementById("heat").innerHTML="heat  : 3";
+                
+            }
+            else if(product=="val4")
+            {
+                document.getElementById("price").innerHTML="9.34$";
+                document.getElementById("model").innerHTML="Model : Revlon Essentials";
+                document.getElementById("cool").innerHTML="Cool shot: Yes";
+                document.getElementById("cord").innerHTML="Cord length (m): 3.03";
+                document.getElementById("loop").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed").innerHTML="speed: 2";
+                document.getElementById("heat").innerHTML="heat  : 3";
+              
+            }
+            else 
+            {
+                document.getElementById("product1").style.opacity = 0;
+            }
+        }
+
+
+        function selectProduct2()
+        {
+
+            document.getElementById("product2").style.opacity = 1;
+
+            var product = document.getElementById("second").value;
+            if(product=="val1")
+            {   document.getElementById("price1").innerHTML="399.99$";
+                document.getElementById("model1").innerHTML="Model :Dyson Supersonic";
+                document.getElementById("cool1").innerHTML="Cool shot: Yes";
+                document.getElementById("cord1").innerHTML="Cord length (m): 2.7";
+                document.getElementById("loop1").innerHTML="Hanging loop: No";
+                document.getElementById("ionic1").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed1").innerHTML="speed: 3";
+                document.getElementById("heat1").innerHTML="heat : 3";
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price1").innerHTML="79.99$";
+                document.getElementById("model1").innerHTML="Model : InStyler TURBO Ionic";
+                document.getElementById("cool1").innerHTML="Cool shot: Yes";
+                document.getElementById("cord1").innerHTML="Cord length (m): 2.94";
+                document.getElementById("loop1").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic1").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed1").innerHTML="speed: no limit";
+                document.getElementById("heat1").innerHTML="heat  : 2";
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price1").innerHTML="139.99$";
+                document.getElementById("model1").innerHTML="Model : Babyliss Nano Titanium";
+                document.getElementById("cool1").innerHTML="Cool shot: Yes";
+                document.getElementById("cord1").innerHTML="Cord length (m): 3.02";
+                document.getElementById("loop1").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic1").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed1").innerHTML="speed: 2";
+                document.getElementById("heat1").innerHTML="heat  : 3";
+            }
+            else if(product=="val4")
+            {
+                document.getElementById("price1").innerHTML="9.34$";
+                document.getElementById("model1").innerHTML="Model : Revlon Essentials";
+                document.getElementById("cool1").innerHTML="Cool shot: Yes";
+                document.getElementById("cord1").innerHTML="Cord length (m): 3.03";
+                document.getElementById("loop1").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic1").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed1").innerHTML="speed: 2";
+                document.getElementById("heat1").innerHTML="heat  : 3";
+              
+            }
+            else 
+            {
+                document.getElementById("product2").style.opacity = 0;
+            }
+        }
+
+        function selectProduct3()
+        {
+
+            document.getElementById("product3").style.opacity = 1;
+
+            var product = document.getElementById("third").value;
+            if(product=="val1")
+            {
+                document.getElementById("price2").innerHTML="399.99$";
+                document.getElementById("model2").innerHTML="Model :Dyson Supersonic";
+                document.getElementById("cool2").innerHTML="Cool shot: Yes";
+                document.getElementById("cord2").innerHTML="Cord length (m): 2.7";
+                document.getElementById("loop2").innerHTML="Hanging loop: No";
+                document.getElementById("ionic2").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed2").innerHTML="speed: 3";
+                document.getElementById("heat2").innerHTML="heat : 3";
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price2").innerHTML="79.99$";
+                document.getElementById("model2").innerHTML="Model : InStyler TURBO Ionic";
+                document.getElementById("cool2").innerHTML="Cool shot: Yes";
+                document.getElementById("cord2").innerHTML="Cord length (m): 2.94";
+                document.getElementById("loop2").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic2").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed2").innerHTML="speed: no limit";
+                document.getElementById("heat2").innerHTML="heat  : 2";
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price2").innerHTML="139.99$";
+                document.getElementById("model2").innerHTML="Model : Babyliss Nano Titanium";
+                document.getElementById("cool2").innerHTML="Cool shot: Yes";
+                document.getElementById("cord2").innerHTML="Cord length (m): 3.02";
+                document.getElementById("loop2").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic2").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed2").innerHTML="speed: 2";
+                document.getElementById("heat2").innerHTML="heat  : 3";
+            }
+            else if(product=="val4")
+            {
+                document.getElementById("price2").innerHTML="9.34$";
+                document.getElementById("model2").innerHTML="Model : Revlon Essentials";
+                document.getElementById("cool2").innerHTML="Cool shot: Yes";
+                document.getElementById("cord2").innerHTML="Cord length (m): 3.03";
+                document.getElementById("loop2").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic2").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed2").innerHTML="speed: 2";
+                document.getElementById("heat2").innerHTML="heat  : 3";
+            }
+            else 
+            {
+                document.getElementById("product3").style.opacity = 0;
+            }
+
+           
+        }
+
+        function selectProduct4()
+        {
+
+            document.getElementById("product4").style.opacity = 1;
+
+            var product = document.getElementById("fourth").value;
+            if(product=="val1")
+            {
+                document.getElementById("price3").innerHTML="399.99$";
+                document.getElementById("model3").innerHTML="Model :Dyson Supersonic";
+                document.getElementById("cool3").innerHTML="Cool shot: Yes";
+                document.getElementById("cord3").innerHTML="Cord length (m): 2.7";
+                document.getElementById("loop3").innerHTML="Hanging loop: No";
+                document.getElementById("ionic3").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed3").innerHTML="speed: 3";
+                document.getElementById("heat3").innerHTML="heat : 3";
+                
+            }
+            else if(product=="val2")
+            {
+                document.getElementById("price3").innerHTML="79.99$";
+                document.getElementById("model3").innerHTML="Model : InStyler TURBO Ionic";
+                document.getElementById("cool3").innerHTML="Cool shot: Yes";
+                document.getElementById("cord3").innerHTML="Cord length (m): 2.94";
+                document.getElementById("loop3").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic3").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed3").innerHTML="speed: no limit";
+                document.getElementById("heat3").innerHTML="heat  : 2";
+            }
+            else if(product=="val3")
+            {
+                document.getElementById("price3").innerHTML="139.99$";
+                document.getElementById("model3").innerHTML="Model : Babyliss Nano Titanium";
+                document.getElementById("cool3").innerHTML="Cool shot: Yes";
+                document.getElementById("cord3").innerHTML="Cord length (m): 3.02";
+                document.getElementById("loop3").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic3").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed3").innerHTML="speed: 2";
+                document.getElementById("heat3").innerHTML="heat  : 3";
+            }
+            else if(product=="val4")
+            {
+                document.getElementById("price3").innerHTML="9.34$";
+                document.getElementById("model3").innerHTML="Model : Revlon Essentials";
+                document.getElementById("cool3").innerHTML="Cool shot: Yes";
+                document.getElementById("cord3").innerHTML="Cord length (m): 3.03";
+                document.getElementById("loop3").innerHTML="Hanging loop: Yes";
+                document.getElementById("ionic3").innerHTML="Ionic technology: Yes";
+                document.getElementById("speed3").innerHTML="speed: 2";
+                document.getElementById("heat3").innerHTML="heat  : 3";
+            }
+            else 
+            {
+                document.getElementById("product4").style.opacity = 0;
+            }
+        }
+    </script>
+
+
+
+<!-- Footer Section Start -->
+<footer class="page-footer mt-5">
+    <div class="footer-logo">
+        <div class="container">
+            <div class="row py-4 d-flex align-item-center">
+  
+                <div class="col-md-12 text-center">
+                    <a class="ml-5" href="../../index.html"><img src="../../assets/images/footer/footer logo.png" width="200px" height="100%" alt=""></i></a>
+                    <a style="font-size: 20px;" class="float-right mt-2 ml-2 p-1 text-dark" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a style="font-size: 20px;"  class="float-right  mt-2 ml-2 p-1 text-dark" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container text-center text-md-left mt-3 footer-content">
+        <div class="row">
+          <div class="col-md-4 mx-auto mb-4 ">
+            <h6 class="text-uppercase font-weight-bold text-center">INTRO </h6>
+            <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 340px; height: 2px; background-color: var(--color-secondary)">
+                <p style="color: white;">Hair care is an overall term for hygiene and cosmetology involving the hair which grows from the human scalp, and to a lesser extent facial, pubic and other body hair. Hair care routines differ according to an individual's culture and the physical characteristics of one's hair.</p>
+                </div>
+               <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold ">LINKS </h6>
+                    <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px; background-color: var(--color-secondary)">
+                    <ul class="list-unstyled ">
+                        <li class="my-2 "><a href="../../index.html">Home</a></li>
+                        <li class="my-2"><a href="../../homeremedies.html">Home Remedies</a></li>
+                        <li class="my-2"><a href="../../products.html">Products</a></li>
+                        <li class="my-2"><a href="../../equipments.html">Equipments</li>
+                        <li class="my-2"><a href="../../contactus.html">Contact us</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-md-2 mx-auto mb-4">
+                      <h6 class="text-uppercase font-weight-bold">Treatments</h6>
+                      <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 120px; height: 2px; background-color: var(--color-secondary);">
+                      <ul class="list-unstyled ">
+                        <li class="my-3 "><a href="../../pages/treatment-pages/hairloss.html">Hair Loss</a></li>
+                              <li class="my-3"><a href="../../pages/treatment-pages/Grayhair.html">Gray Hair </a></li>
+                              <li class="my-3"><a href="../../pages/treatment-pages/baldness.html">Baldness Treatment</a></li>
+                              <li class="my-3"><a href="../../pages/treatment-pages/dandruff.html">Dandruff Treatment</li>
+                    </ul>
+                      </div>
+                     
+        </div>
+        <div class="footer-copyright text-center py-3 ">
+  
+            <p>&copy; Copyright 
+                <a href="#">AFAQUE AHMED</a>
+            </p>
+         
+        </div>
+  
+  
+  
+    </div>
+  
+  
+  
+  </footer>
+  
+  <!-- Footer Section End -->
+
+
+
+</div>
+<!-- BOOTSTRAP 4 (js , pooper and jquery CDN) -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- JQUERY CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+<!-- CUSTOM JAVASCRIPT -->
+<script src="../../assets/js/script.js"> </script>
+</body>
+</html>

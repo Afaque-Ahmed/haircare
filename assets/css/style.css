@@ -1,0 +1,1374 @@
+/* CSS Variable */
+:root {
+  --color-primary: #c27861;
+  --color-secondary: #232323;
+  --color-white: #fff;
+  --color-gray: #7d7d7b;
+  --body-fonts: "Montserrat", Sans-serif;
+  --head-fonts: "Work Sans", Sans-serif;
+}
+
+/* CSS Variable Close */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--head-fonts);
+  font-size: 100%;
+  font-weight: 400;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+.fa-star,
+.fa-star-half-alt {
+  color: var(--color-primary);
+}
+
+.fa-eye,
+.fa-cloud-download-alt {
+  color: var(--color-secondary);
+  font-size: 35px;
+  background-color: var(--color-primary);
+  width: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+/* HEADER CSS START */
+.header {
+  background-color: var(--color-white);
+  z-index: 100;
+  padding: 0.625rem;
+  box-shadow: 0 10px 50px 0 rgb(46 56 220 / 20%);
+}
+nav {
+  background-color: var(--color-white);
+  height: 60px;
+}
+
+
+.header .navbar-nav a.nav-link {
+  position: relative;
+  padding: 0.8rem 1.2rem;
+  color: var(--color-secondary);
+  text-align: center;
+  border-bottom: 2px solid var(--color-white);
+}
+.header .navbar-nav a.nav-link:hover {
+  border-bottom: 2px solid var(--color-primary);
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.header .navbar-nav a.nav-link:active {
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.dropdown-menu a.dropdown-item {
+  text-align: center;
+}
+.dropdown-menu a.dropdown-item:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* HEADER CSS CLOSE */
+
+/* Slider CSS START */
+.bg-hero {
+  background-color: white;
+}
+
+/* Slider CSS Close */
+
+/* Introduction CSS START */
+.introduction-sec .introduction-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-secondary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.introduction-sec .introduction-head h1 span {
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.introduction-sec .introduction-head p {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
+  font-family: var(--body-fonts);
+  margin-top: 30px;
+}
+
+.intro-content .intro-text h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-secondary);
+  letter-spacing: 7px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5rem;
+}
+.intro-content img {
+  margin-top: 5rem;
+}
+
+.intro-content .intro-text h1 span {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.intro-content .intro-text p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: left;
+  font-family: var(--body-fonts);
+  margin-top: 20px;
+}
+
+.intro-banner h1 {
+  color: var(--color-primary);
+  font-family: var(--head-fonts);
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/Homepage/intro-banner.jpg);
+  width: 100%;
+  height: 500px;
+  margin-top: 8rem;
+  border-top: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/* Introduction CSS Close */
+
+/* Home product CSS Start */
+.home-products-sec .home-prod-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--head-fonts);
+  color: var(--color-secondary);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8rem;
+  text-transform: uppercase;
+}
+.home-products-sec .home-prod-head h1 span {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.home-products-sec .home-products {
+  margin-top: 4rem;
+  padding: 10px;
+}
+.home-products-sec .home-products .card img {
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.home-products-sec .home-products .card-body h5 {
+  font-family: var(--head-fonts);
+  font-weight: 400;
+  text-align: center;
+  font-size: 17px;
+}
+.home-products-sec .home-products .card-footer h6 {
+  font-weight: 700;
+  text-align: center;
+}
+.home-products-sec .card {
+  transition: transform 0.8s ease;
+  border: 1px solid var(--color-white);
+  border-radius: 30px;
+}
+.home-products-sec .card:hover {
+  color: var(--color-primary);
+  transform: scale(1.1);
+  border: 1px solid var(--color-primary);
+  border-radius: 40px;
+}
+.prd-btn a {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  float: right;
+  border: 3px solid var(--color-secondary);
+  border-radius: 20px;
+  font-family: var(--body-fonts);
+  font-weight: 500;
+  font-size: 14px;
+}
+.prd-btn a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: 3px solid var(--color-primary);
+}
+
+/* Home product CSS End */
+
+/* Gallery CSS Start */
+
+body.modal-open .supreme-container {
+  filter: blur(3px);
+}
+
+.gallery-sec .gallery-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--head-fonts);
+  color: var(--color-secondary);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8rem;
+  text-transform: uppercase;
+  text-decoration: underline var(--color-primary);
+}
+.gallery-sec .gallery-head a img {
+  transition: transform 0.6s ease-in-out;
+  border: 3px solid var(--color-primary);
+}
+.gallery-sec .gallery-head a img:hover {
+  transform: scale(1.1);
+  filter: brightness(50%);
+  border: 3px solid var(--color-primary);
+}
+.modal-1 .modal-cont {
+  border: 3px solid var(--color-primary);
+  border-radius: 20px;
+}
+.modal-img {
+  margin-top: 4rem;
+}
+
+.modal-footer {
+  border-style: none;
+  justify-content: center;
+}
+.modal-cont {
+  margin-top: 30%;
+}
+/* Gallery CSS End */
+
+/* Latest Development CSS Start */
+
+.latest-development-sec .latest-development-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--head-fonts);
+  color: var(--color-secondary);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 9rem;
+  text-transform: uppercase;
+}
+.latest-development-sec .latest-development-head h1 span {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.latest-development-sec .latest-cont {
+  margin-top: 3rem;
+}
+.latest-development-sec .latest-cont h5 {
+  text-align: center;
+  font-family: var(--head-fonts);
+  font-weight: 600;
+}
+.latest-development-sec .latest-cont p {
+  font-family: var(--body-fonts);
+}
+.latest-development-sec .card-deck .card {
+  border: 2px solid var(--color-primary);
+}
+/* Latest Development CSS close */
+
+/* Footer Section CSS Start */
+.page-footer .footer-logo {
+  background-color: var(--color-primary);
+}
+
+.page-footer {
+  background-color: var(--color-primary);
+  border-top: 5px solid var(--color-secondary);
+}
+.page-footer .footer-content h6 {
+  color: var(--color-secondary);
+}
+.page-footer .footer-content ul li a {
+  color: var(--color-white);
+}
+.footer-copyright p a {
+  color: var(--color-secondary);
+}
+/* Footer Section CSS Close */
+
+/* Treatment Section CSS Start */
+.hairloss-banner-sec {
+  background-image: url(../images/Treatments/hairloss-banner.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin-top: 4rem;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.hairloss-sec .treatment-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-primary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+
+.hairloss-sec .treatment-head h1 span {
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.hairloss-sec .treatment-head p {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
+  line-height: 4.85rem;
+  font-family: var(--body-fonts);
+}
+
+.treatments-cont p {
+  font-family: var(--body-fonts);
+  font-size: 22px;
+  margin-top: 20px;
+  text-align: center;
+}
+.treatments-cont h1 {
+  font-family: var(--head-fonts);
+  text-transform: uppercase;
+  text-decoration: underline var(--color-primary);
+  margin-top: 20px;
+}
+.treatments-cont img {
+  border: 8px solid var(--color-secondary);
+  border-radius: 50px;
+}
+
+.gray-banner-sec {
+  background-image: url(../images/Treatments/gray-banner.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.gray-sec .treatment-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-primary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+
+.gray-sec .treatment-head h1 span {
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.gray-sec .treatment-head p {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
+  line-height: 4.85rem;
+  font-family: var(--body-fonts);
+}
+
+.bald-banner-sec {
+  background-image: url(../images/Treatments/bald-banner.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.dandruff-banner-sec {
+  background-image: url(../images/Treatments/dandruff-banner.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/* Treatment Section CSS Close */
+
+/* Home Remedies Section CSS Start */
+
+.homeremedies-sec .homeremedies-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-primary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.homeremedies-sec .homeremedies-head h1 span {
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.homeremedies-sec .homeremedies-head p {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
+  font-family: var(--body-fonts);
+}
+.remedies-banner {
+  background-image: url(../images/Header/homeremedies\ banner.jpg);
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+.homeremedies-head {
+  position: absolute;
+  top: 60%;
+}
+
+/* Home Remedies Section CSS close */
+
+/* Products Section Start */
+
+.banner-sec {
+  background-image: url(../images/Header/productbanner.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-top: 4rem;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.products-sec .products-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-primary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.products-sec .products-head h1 span {
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.products-sec .card {
+  transition: transform 0.8s ease;
+  border: 1px solid var(--color-white);
+  border-radius: 30px;
+}
+.products-sec .card:hover {
+  color: var(--color-primary);
+  transform: scale(0.9);
+  border: 1px solid var(--color-primary);
+  border-radius: 40px;
+}
+.products-sec .card .card-body {
+  color: var(--color-secondary);
+}
+.products-sec .card .card-body:hover {
+  color: var(--color-primary);
+}
+.card-footer {
+  display: block;
+  text-align: center;
+}
+/*==== Man section ======  */
+
+.man-products .man-products-sider {
+  background-image: url(../images/Products/male\ sider.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 950px;
+  margin-top: 8rem;
+}
+.man-product-header {
+  margin-top: 100px;
+}
+.man-products .man-products-sider h1 {
+  text-align: center;
+  padding-top: 700px;
+  font-family: var(--body-fonts);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
+  word-spacing: 10px;
+}
+.man-products .man-products-sider h1 span {
+  color: var(--color-primary);
+}
+.man-products .man-product-header h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-primary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+}
+.man-products .man-product-header h1 span {
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+.man-product-cards .card img {
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.man-products-1 h3 {
+  font-family: var(--head-fonts);
+  font-weight: 700;
+  text-decoration: underline var(--color-primary);
+  text-transform: uppercase;
+}
+
+.man-products-2 h3 {
+  font-family: var(--head-fonts);
+  font-weight: 700;
+  text-decoration: underline var(--color-primary);
+  text-transform: uppercase;
+}
+.man-products-1 .card-body h5 {
+  font-family: var(--head-fonts);
+  font-weight: 400;
+  text-align: center;
+}
+.man-products-1 .card-footer h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.man-products-2 .card-body h5 {
+  font-family: var(--head-fonts);
+  font-weight: 400;
+  text-align: center;
+}
+.man-products-2 .card-footer h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.man-products-3 h3 {
+  font-family: var(--head-fonts);
+  font-weight: 700;
+  text-decoration: underline var(--color-primary);
+  text-transform: uppercase;
+}
+
+.man-products-3 .card-body h5 {
+  font-family: var(--head-fonts);
+  font-weight: 400;
+  text-align: center;
+}
+.man-products-3 .card-footer h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+/*==== women section ======  */
+.women-products .women-products-sider {
+  background-image: url(../images/Products/women\ sider.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 950px;
+  margin-top: 8rem;
+}
+.women-product-header {
+  margin-top: 100px;
+}
+.women-products .women-products-sider h1 {
+  text-align: center;
+  padding-top: 650px;
+  font-family: var(--body-fonts);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
+  word-spacing: 10px;
+}
+.women-products .women-products-sider h1 span {
+  color: var(--color-primary);
+}
+.women-products .women-product-header h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-primary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+}
+.women-products .women-product-header h1 span {
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+.women-product-cards .card img {
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.women-products-1 h3 {
+  font-family: var(--head-fonts);
+  font-weight: 700;
+  text-decoration: underline var(--color-primary);
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.women-products-2 h3 {
+  font-family: var(--head-fonts);
+  font-weight: 700;
+  text-decoration: underline var(--color-primary);
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.women-products-1 .card-body h5 {
+  font-family: var(--head-fonts);
+  font-weight: 400;
+  text-align: center;
+}
+.women-products-1 .card-footer h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.women-products-2 .card-body h5 {
+  font-family: var(--head-fonts);
+  font-weight: 400;
+  text-align: center;
+}
+.women-products-2 .card-footer h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.women-products-3 h3 {
+  font-family: var(--head-fonts);
+  font-weight: 700;
+  text-decoration: underline var(--color-primary);
+  text-transform: uppercase;
+}
+
+.women-products-3 .card-body h5 {
+  font-family: var(--head-fonts);
+  font-weight: 400;
+  text-align: center;
+}
+.women-products-3 .card-footer h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Products Section close */
+
+/* Equipments Section Start */
+
+.banner-sec-equ {
+  background-image: url(../images/Header/equipmentsbanner.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.Equipment-sec .products-head h1 {
+  position: relative;
+  padding: 0;
+  font-family: var(--body-fonts);
+  color: var(--color-primary);
+  letter-spacing: 7px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8rem;
+  text-shadow: 2px 2px 2px white;
+}
+
+.Equipment-sec .products-head h1 span {
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.Equipment-sec .products-head p {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
+  font-family: var(--body-fonts);
+  margin-top: 30px;
+}
+
+/* ==== Dryer Equipment === */
+
+.dryer-equ {
+  width: 100%;
+  font-family: var(--body-fonts);
+}
+
+.heading-equ h2 {
+  margin-top: 40px;
+  margin-left: 70px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: var(--head-fonts);
+  width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 24px;
+  padding: 5px;
+  height: 40px;
+}
+
+.heading-equ2 h2 {
+  margin-top: 40px;
+  margin-left: 70px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: var(--head-fonts);
+  width: 238px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  padding: 5px;
+  height: 40px;
+}
+
+.heading-equ3 h2 {
+  margin-top: 40px;
+  margin-left: 70px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: var(--head-fonts);
+  width: 184px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 24px;
+  padding: 5px;
+  height: 40px;
+}
+
+.heading-equ4 h2 {
+  margin-top: 40px;
+  margin-left: 70px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: var(--head-fonts);
+  width: 207px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 24px;
+  padding: 5px;
+  height: 40px;
+}
+
+.equ-dryer-1 .equ-cards .card-deck .card img {
+  transition: transform 0.8s ease;
+}
+
+.equ-dryer-1 .equ-cards .card-deck .card .card-body {
+  text-align: center;
+  font-family: var(--body-fonts);
+}
+.equ-dryer-1 .equ-cards .card-deck .card .card-body h5 {
+  font-weight: unset;
+  padding: 5px;
+}
+.equ-dryer-1 .equ-cards .card-deck .card .card-body h6 {
+  font-weight: bolder;
+}
+
+.equ-dryer-1 .equ-cards .card-deck .card .overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  margin-left: 0;
+  width: 70px;
+}
+.equ-dryer-1 .equ-cards .card-deck .card:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+.equ-dryer-1 .equ-cards .card-deck .card:hover img {
+  filter: blur(1px);
+  transform: scale(0.9);
+}
+.overlay .fa {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 7px;
+  margin: 5%;
+  margin-bottom: 5%;
+}
+/* ===Dryer Equipment close=== */
+
+/* ===Straightner Equipment Start=== */
+.stra-equ {
+  width: 100%;
+  font-family: var(--body-fonts);
+}
+
+.equ-stra-1 .equ-cards .card-deck .card img {
+  transition: transform 0.8s ease;
+}
+
+.equ-stra-1 .equ-cards .card-deck .card .card-body {
+  text-align: center;
+  font-family: var(--body-fonts);
+}
+.equ-stra-1 .equ-cards .card-deck .card .card-body h5 {
+  font-weight: unset;
+  padding: 5px;
+}
+.equ-stra-1 .equ-cards .card-deck .card .card-body h6 {
+  font-weight: bolder;
+}
+
+.equ-stra-1 .equ-cards .card-deck .card .overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  margin-left: 0;
+  width: 70px;
+}
+.equ-stra-1 .equ-cards .card-deck .card:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+.equ-stra-1 .equ-cards .card-deck .card:hover img {
+  filter: blur(1px);
+  transform: scale(0.9);
+}
+
+/* ===Straightner Equipment close=== */
+
+/* ===WANDS Equipment Start=== */
+.wand-equ {
+  width: 100%;
+  font-family: var(--body-fonts);
+}
+
+.equ-wand-1 .equ-cards .card-deck .card img {
+  transition: transform 0.8s ease;
+}
+
+.equ-wand-1 .equ-cards .card-deck .card .card-body {
+  text-align: center;
+  font-family: var(--body-fonts);
+}
+.equ-wand-1 .equ-cards .card-deck .card .card-body h5 {
+  font-weight: unset;
+  padding: 5px;
+}
+.equ-wand-1 .equ-cards .card-deck .card .card-body h6 {
+  font-weight: bolder;
+}
+
+.equ-wand-1 .equ-cards .card-deck .card .overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  margin-left: 0;
+  width: 70px;
+}
+.equ-wand-1 .equ-cards .card-deck .card:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+.equ-wand-1 .equ-cards .card-deck .card:hover img {
+  filter: blur(1px);
+  transform: scale(0.9);
+}
+
+/* ===WANDS Equipment close=== */
+
+/* ===Massager Equipment start=== */
+
+.massage-equ {
+  width: 100%;
+  font-family: var(--body-fonts);
+}
+
+.equ-massage-1 .equ-cards .card-deck .card img {
+  transition: transform 0.8s ease;
+}
+
+.equ-massage-1 .equ-cards .card-deck .card .card-body {
+  text-align: center;
+  font-family: var(--body-fonts);
+}
+.equ-massage-1 .equ-cards .card-deck .card .card-body h5 {
+  font-weight: unset;
+  padding: 5px;
+}
+.equ-massage-1 .equ-cards .card-deck .card .card-body h6 {
+  font-weight: bolder;
+}
+
+.equ-massage-1 .equ-cards .card-deck .card .overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  margin-left: 0;
+  width: 70px;
+}
+.equ-massage-1 .equ-cards .card-deck .card:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+.equ-massage-1 .equ-cards .card-deck .card:hover img {
+  filter: blur(1px);
+  transform: scale(0.9);
+}
+
+/* ===Massager Equipment close=== */
+
+/* Equipments Section close */
+
+/* Contact us CSS Start */
+
+.contact-section {
+  background-size: cover;
+  padding: 40px 0;
+  margin-top: 6rem;
+}
+.contact-section h1 {
+  text-align: center;
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 50px;
+  text-decoration: underline var(--color-primary);
+}
+.border {
+  width: 100px;
+  height: 10px;
+  margin: 40px auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 16px 0;
+  border: 2px solid var(--color-primary);
+  background: white;
+  padding: 20px;
+  outline: black;
+  color: black;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px var(--color-secondary);
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* Contact us CSS close */
+
+/* Responsive CSS Start */
+
+/*=== Ipad Pro Screen ===*/
+@media (max-width: 1200px) {
+  .header .navbar-nav a.nav-link {
+    padding: 0.8rem 1rem;
+  }
+  .intro-banner {
+    background-attachment: inherit;
+  }
+  .hairloss-banner-sec {
+    width: 100%;
+    height: 300px;
+  }
+  .gray-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .bald-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .dandruff-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1030px) {
+  .header .navbar-nav a.nav-link {
+    padding: 0.5rem 0.7rem;
+  }
+  .bg-hero {
+    min-height: 310px;
+  }
+  .intro-banner {
+    background-attachment: inherit;
+  }
+  .hairloss-banner-sec {
+    width: 100%;
+    height: 300px;
+  }
+  .gray-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .bald-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .dandruff-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+}
+/*=== Ipad Screen ===*/
+@media (max-width: 992px) {
+  .header .navbar-nav a.nav-link {
+    padding: 0.5rem 0.5rem;
+  }
+  .menu-toggle {
+    position: relative;
+  }
+  .menu-toggle span {
+    width: 2rem;
+    height: 0.2rem;
+    display: block;
+    background: var(--color-primary);
+    margin: 0.35rem;
+    transition: all 0.3s;
+  }
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 0.2rem;
+  }
+  .menu-toggle.active span:nth-child(2) {
+    display: none;
+  }
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -0.3rem;
+  }
+  .bg-hero {
+    min-height: 210px;
+  }
+  .intro-banner {
+    background-attachment: inherit;
+  }
+  .hairloss-banner-sec {
+    width: 100%;
+    height: 240px;
+  }
+  .gray-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .bald-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .dandruff-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*=== Mobile Screen ===*/
+@media screen and (max-width: 768px) {
+  .intro-banner {
+    background-attachment: inherit;
+  }
+  .banner-sec {
+    background-attachment: inherit;
+  }
+  .man-products .man-products-sider {
+    width: 100%;
+    height: auto;
+  }
+  .banner-sec-equ {
+    width: 100%;
+    height: auto;
+  }
+  .banner-sec-equ {
+    width: 100%;
+    height: auto;
+  }
+  .hairloss-banner-sec {
+    width: 100%;
+    height: 240px;
+  }
+  .gray-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .bald-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .dandruff-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .navbar-nav {
+    padding: 0.5rem 0;
+  }
+  .intro-banner {
+    background-attachment: inherit;
+  }
+  .banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .man-products .man-products-sider {
+    width: 100%;
+    height: auto;
+  }
+  .banner-sec-equ {
+    width: 100%;
+    height: auto;
+  }
+  .hairloss-banner-sec {
+    width: 100%;
+    height: 200px;
+  }
+  .gray-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .bald-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .dandruff-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro-banner {
+    background-attachment: inherit;
+    width: 100%;
+    height: auto;
+  }
+  .intro-banner h1 {
+    font-size: 30px;
+  }
+  .banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .man-products .man-products-sider {
+    width: 100%;
+    height: auto;
+  }
+  .banner-sec-equ {
+    width: 100%;
+    height: auto;
+  }
+  .hairloss-banner-sec {
+    width: 100%;
+    height: 120px;
+  }
+  .gray-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .bald-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+  .dandruff-banner-sec {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Responsive CSS CLOSE */
