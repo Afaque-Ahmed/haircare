@@ -80,6 +80,9 @@ nav {
   height: 60px;
 }
 
+.navbar-nav{
+background-color: white;
+}
 
 .header .navbar-nav a.nav-link {
   position: relative;
