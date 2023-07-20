@@ -591,7 +591,7 @@ body.modal-open .supreme-container {
 .card-footer {
   display: block;
   text-align: center;
-  background-color: white !important;
+  background-color: transparent !important;
 }
 /*==== Man section ======  */
 
